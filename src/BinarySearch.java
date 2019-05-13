@@ -8,7 +8,7 @@ public class BinarySearch {
             int middleIndexNumber=(highIndexNumber+lowIndexNumber)/2;
             if(numberList[middleIndexNumber]==numberToBeSearch){
                 System.out.println(middleIndexNumber);
-                break;
+                return;
             }
             else if(numberList[middleIndexNumber]>numberToBeSearch){
                 highIndexNumber=middleIndexNumber;
@@ -17,5 +17,6 @@ public class BinarySearch {
                 lowIndexNumber=middleIndexNumber;
             }
         }
+        System.out.println("Element is not found");
     }
 }
