@@ -13,6 +13,9 @@ public class BinarySearch {
             else if(numberList[middleIndexNumber]>numberToBeSearch){
                 highIndexNumber=middleIndexNumber;
             }
+            else if(numberList[middleIndexNumber]<numberToBeSearch){
+                lowIndexNumber=middleIndexNumber;
+            }
         }
     }
 }
