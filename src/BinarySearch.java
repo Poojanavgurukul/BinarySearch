@@ -10,6 +10,9 @@ public class BinarySearch {
                 System.out.println(middleIndexNumber);
                 break;
             }
+            else if(numberList[middleIndexNumber]>numberToBeSearch){
+                highIndexNumber=middleIndexNumber;
+            }
         }
     }
 }
