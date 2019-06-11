@@ -34,5 +34,4 @@ public class BinarySearch {
     private static <T extends Comparable<T>> boolean isAElement(T elementToBeSearch, List<T> elementList, int middleindexnumber) {
         return elementList.get(middleindexnumber).equals(elementToBeSearch);
     }
-
 }

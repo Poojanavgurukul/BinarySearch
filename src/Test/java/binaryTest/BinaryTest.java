@@ -33,15 +33,13 @@ public class BinaryTest {
         assertEquals(expected,BinarySearch.binarySearch(3.3,elementList,0,5));
     }
     @Test public void objectElement(){
-        Race race=new Race();
-        Runner runner1=new Runner("Pooja");
-        Runner runner2=new Runner("Rahul");
-        Runner runner3=new Runner("Zeba");
-        race.add(runner1);
-        race.add(runner2);
-        race.add(runner3);
-        int expected=0;
-        int number=race.getListOfRunner().size();
-        assertEquals(expected,BinarySearch.binarySearch("Rahul",race.getListOfRunner(),0,number));
+        List<Runner>runners=Arrays.asList();
+        Runner runner1=new Runner("ankita");
+        Runner runner2=new Runner("bhavan");
+        Runner runner3=new Runner("pooja");
+        runners.add(runner1);
+        runners.add(runner2);
+        runners.add(runner3);
+        assertEquals(1,BinarySearch.binarySearch(runner3,runners,0,3));
     }
 }
